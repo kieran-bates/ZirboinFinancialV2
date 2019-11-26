@@ -27,73 +27,117 @@ public class GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        userInput = new javax.swing.JTextField();
+        calculateButton = new javax.swing.JButton();
+        blointoints = new javax.swing.JLabel();
+        drobzits = new javax.swing.JLabel();
+        clickwits = new javax.swing.JLabel();
+        gazoontights = new javax.swing.JLabel();
+        frazoints = new javax.swing.JLabel();
+        vrobits = new javax.swing.JLabel();
+        blointointsOutput = new javax.swing.JTextField();
+        drobzitsOutput = new javax.swing.JTextField();
+        clickwicksOutput = new javax.swing.JTextField();
+        gazoontightsOutput = new javax.swing.JTextField();
+        frazointsOutput = new javax.swing.JTextField();
+        vrobitsOutput = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Calculate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        userInput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        calculateButton.setText("Calculate");
+        calculateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                calculateButtonActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("jLabel1");
+        blointoints.setText("Blointoints");
 
-        jLabel2.setText("jLabel2");
+        drobzits.setText("Drobzits");
 
-        jLabel3.setText("jLabel3");
+        clickwits.setText("Clickwicks");
 
-        jLabel4.setText("jLabel4");
+        gazoontights.setText("Gazoontights");
 
-        jLabel5.setText("jLabel5");
+        frazoints.setText("Frazoints");
+
+        vrobits.setText("Vrobits");
+
+        blointointsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        drobzitsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        clickwicksOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        gazoontightsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        frazointsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        vrobitsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(162, 162, 162)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField1))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1)
-                        .addGap(50, 50, 50)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addGap(51, 51, 51)
-                        .addComponent(jLabel4)
-                        .addGap(52, 52, 52)
-                        .addComponent(jLabel5)))
-                .addContainerGap())
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(blointoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(blointointsOutput))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(drobzits, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(drobzitsOutput))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(clickwits, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(clickwicksOutput))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(gazoontights, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(gazoontightsOutput))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(frazoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(frazointsOutput))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(vrobits, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(vrobitsOutput))
+                .addGap(20, 20, 20))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(calculateButton)
+                    .addComponent(userInput, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(171, 171, 171))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(67, 67, 67)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addComponent(userInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(calculateButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(77, 77, 77))
+                    .addComponent(blointoints)
+                    .addComponent(drobzits)
+                    .addComponent(clickwits)
+                    .addComponent(gazoontights)
+                    .addComponent(frazoints)
+                    .addComponent(vrobits))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(blointointsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(drobzitsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(clickwicksOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gazoontightsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(frazointsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vrobitsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(51, 51, 51))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -110,9 +154,33 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void calculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtonActionPerformed
+        
+        final int vrobitValue = 1;
+        final int blointointValue = 500;
+        final int frazointValue = 1000;
+        final int gazoontightValue = 10000;
+        final int clickwickValue = 50000;
+        final int drobzitValue = 100000;
+        int numberOfVrobits;
+        int userInputValue;
+        
+        userInputValue = Integer.parseInt(userInput.getText());
+        
+        boolean repeat = true;
+        
+        while(repeat == true)
+        {
+            if(drobzitValue<userInputValue)
+            {
+                userInputValue = userInputValue - drobzitValue;
+            }
+            else
+            {
+                
+            }
+        }
+    }//GEN-LAST:event_calculateButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,13 +218,20 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel blointoints;
+    private javax.swing.JTextField blointointsOutput;
+    private javax.swing.JButton calculateButton;
+    private javax.swing.JTextField clickwicksOutput;
+    private javax.swing.JLabel clickwits;
+    private javax.swing.JLabel drobzits;
+    private javax.swing.JTextField drobzitsOutput;
+    private javax.swing.JLabel frazoints;
+    private javax.swing.JTextField frazointsOutput;
+    private javax.swing.JLabel gazoontights;
+    private javax.swing.JTextField gazoontightsOutput;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField userInput;
+    private javax.swing.JLabel vrobits;
+    private javax.swing.JTextField vrobitsOutput;
     // End of variables declaration//GEN-END:variables
 }
