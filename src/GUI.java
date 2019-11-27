@@ -48,10 +48,10 @@ public class GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        userInput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        userInput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         userInput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        calculateButton.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        calculateButton.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         calculateButton.setText("Calculate");
         calculateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,64 +59,69 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        blointoints.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        blointoints.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         blointoints.setText("Blointoints");
 
-        drobzits.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        drobzits.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         drobzits.setText("Drobzits");
 
-        clickwits.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        clickwits.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         clickwits.setText("Clickwicks");
 
-        gazoontights.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        gazoontights.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         gazoontights.setText("Gazoontights");
 
-        frazoints.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        frazoints.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         frazoints.setText("Frazoints");
 
-        vrobits.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        vrobits.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         vrobits.setText("Vrobits");
 
         blointointsOutput.setEditable(false);
-        blointointsOutput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        blointointsOutput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         blointointsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         blointointsOutput.setText("0");
 
         drobzitsOutput.setEditable(false);
-        drobzitsOutput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        drobzitsOutput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         drobzitsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         drobzitsOutput.setText("0");
 
         clickwicksOutput.setEditable(false);
-        clickwicksOutput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        clickwicksOutput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         clickwicksOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         clickwicksOutput.setText("0");
+        clickwicksOutput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clickwicksOutputActionPerformed(evt);
+            }
+        });
 
         gazoontightsOutput.setEditable(false);
-        gazoontightsOutput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        gazoontightsOutput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         gazoontightsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         gazoontightsOutput.setText("0");
 
         frazointsOutput.setEditable(false);
-        frazointsOutput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        frazointsOutput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         frazointsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         frazointsOutput.setText("0");
 
         vrobitsOutput.setEditable(false);
-        vrobitsOutput.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        vrobitsOutput.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         vrobitsOutput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         vrobitsOutput.setText("0");
 
-        title.setFont(new java.awt.Font("Stone Sans Sem OS ITCTT", 0, 36)); // NOI18N
+        title.setFont(new java.awt.Font("BankGothic Md BT", 0, 36)); // NOI18N
         title.setText("$  ZirboinFinancial  $");
 
-        jLabel1.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         jLabel1.setText("Enter a quantity of Vrobits");
 
-        jLabel2.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         jLabel2.setText("The optimal change will be calculated");
 
-        jButton1.setFont(new java.awt.Font("Menlo", 0, 13)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Courier New", 0, 13)); // NOI18N
         jButton1.setText("CLEAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,64 +141,66 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(blointoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(blointointsOutput))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(37, 37, 37)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(drobzitsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(drobzits))
+                                .addGap(7, 7, 7)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(27, 27, 27)
-                                        .addComponent(drobzits)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                        .addComponent(clickwicksOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(32, 32, 32))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(18, 18, 18)
-                                        .addComponent(drobzitsOutput)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(clickwits, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(clickwicksOutput))
-                                .addGap(18, 18, 18)
+                                        .addComponent(clickwits)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(gazoontights, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(gazoontightsOutput))
                                 .addGap(32, 32, 32)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(frazoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(frazointsOutput))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(vrobitsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(vrobits, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addContainerGap())
+                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(frazoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(frazointsOutput))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(vrobitsOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(vrobits))))
+                                .addGap(25, 25, 25))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(title)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(57, 57, 57)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(134, 134, 134)
-                                        .addComponent(calculateButton))
+                                        .addComponent(jLabel2)
+                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(57, 57, 57)
                                         .addComponent(userInput, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(67, 67, 67))))
+                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(34, 34, 34)))
-                        .addGap(143, 143, 143))))
+                        .addComponent(title)
+                        .addGap(93, 93, 93))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(200, 200, 200)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(236, 236, 236)
+                        .addComponent(calculateButton)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(title)
-                .addGap(29, 29, 29)
+                .addGap(33, 33, 33)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -201,7 +208,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(calculateButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(blointoints)
                     .addComponent(drobzits)
@@ -375,6 +382,10 @@ public class GUI extends javax.swing.JFrame {
         userInput.setText("");
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void clickwicksOutputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clickwicksOutputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_clickwicksOutputActionPerformed
 
     /**
      * @param args the command line arguments
